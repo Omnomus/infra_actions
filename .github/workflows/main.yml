@@ -45,7 +45,7 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/infra:latest
 
-  depoloy:
+  deploy:
     runs-on: ubuntu-latest
     needs: build_and_push_to_docker_hub
     steps:
